@@ -22,7 +22,7 @@ model = CNNModel()
 def load_model():
     model = CNNModel()
     # Load the saved weights from yesterday's lab
-    model.load_state_dict(torch.load('mnist_lightweight_model.pth', weights_only=True))
+    model.load_state_dict(torch.load('mnist_cnn_model.pth', weights_only=True))
     model.eval() # Set to evaluation mode
     return model
 
